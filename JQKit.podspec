@@ -1,9 +1,3 @@
-#
-# Be sure to run `pod spec lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about the attributes see http://docs.cocoapods.org/specification.html
-#
 Pod::Spec.new do |s|
   s.name         = "JQKit"
   s.version      = "0.1.0"
@@ -15,7 +9,6 @@ Pod::Spec.new do |s|
                     * NSString+JQ
                    DESC
   s.homepage     = "https://github.com/fleitz/JQKit"
-#  s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license      = 'MIT'
   s.author       = { "Fred Leitz" => "fred.leitz@gmail.com" }
   s.source       = { :git => "https://github.com/fleitz/JQKit.git", :tag => s.version.to_s }
@@ -25,8 +18,8 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
-  s.resources = 'Assets'
+  s.source_files = 'Classes/**/*.{h,m,c}'
+#  s.resources = 'Assets'
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
