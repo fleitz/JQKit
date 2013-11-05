@@ -7,21 +7,21 @@
 Pod::Spec.new do |s|
   s.name         = "JQKit"
   s.version      = "0.1.0"
-  s.summary      = "A short description of JQKit."
+  s.summary      = "JQKit is an Objective-C wrapper around jq."
   s.description  = <<-DESC
-                    An optional longer description of JQKit
+                    JQKit is an Objective-C wrapper around jq.
 
-                    * Markdown format.
-                    * Don't worry about the indent, we strip it!
+                    * NSData+JQ
+                    * NSString+JQ
                    DESC
-  s.homepage     = "http://EXAMPLE/NAME"
-  s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage     = "https://github.com/fleitz/JQKit"
+#  s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license      = 'MIT'
   s.author       = { "Fred Leitz" => "fred.leitz@gmail.com" }
-  s.source       = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/fleitz/JQKit.git", :tag => s.version.to_s }
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
+  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 

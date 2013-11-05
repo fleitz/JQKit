@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6296B921828A8CD00ABE1B3 /* builtin.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B671828A8CD00ABE1B3 /* builtin.c */; };
+		B6296B931828A8CD00ABE1B3 /* bytecode.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B691828A8CD00ABE1B3 /* bytecode.c */; };
+		B6296B941828A8CD00ABE1B3 /* compile.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B6B1828A8CD00ABE1B3 /* compile.c */; };
+		B6296B951828A8CD00ABE1B3 /* execute.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B6E1828A8CD00ABE1B3 /* execute.c */; };
+		B6296B961828A8CD00ABE1B3 /* jq_test.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B731828A8CD00ABE1B3 /* jq_test.c */; };
+		B6296B971828A8CD00ABE1B3 /* jv.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B741828A8CD00ABE1B3 /* jv.c */; };
+		B6296B981828A8CD00ABE1B3 /* jv_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B761828A8CD00ABE1B3 /* jv_alloc.c */; };
+		B6296B991828A8CD00ABE1B3 /* jv_aux.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B781828A8CD00ABE1B3 /* jv_aux.c */; };
+		B6296B9A1828A8CD00ABE1B3 /* jv_dtoa.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B7A1828A8CD00ABE1B3 /* jv_dtoa.c */; };
+		B6296B9B1828A8CD00ABE1B3 /* jv_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B7C1828A8CD00ABE1B3 /* jv_parse.c */; };
+		B6296B9C1828A8CD00ABE1B3 /* jv_print.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B7E1828A8CD00ABE1B3 /* jv_print.c */; };
+		B6296B9D1828A8CD00ABE1B3 /* jv_unicode.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B7F1828A8CD00ABE1B3 /* jv_unicode.c */; };
+		B6296B9E1828A8CD00ABE1B3 /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B821828A8CD00ABE1B3 /* lexer.c */; };
+		B6296B9F1828A8CD00ABE1B3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B851828A8CD00ABE1B3 /* main.c */; };
+		B6296BA01828A8CD00ABE1B3 /* opcode.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B861828A8CD00ABE1B3 /* opcode.c */; };
+		B6296BA11828A8CD00ABE1B3 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B891828A8CD00ABE1B3 /* parser.c */; };
+		B6296BA21828A8CD00ABE1B3 /* NSData+JQ.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296B8F1828A8CD00ABE1B3 /* NSData+JQ.m */; };
+		B6296BA31828A8CD00ABE1B3 /* NSString+JQ.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296B911828A8CD00ABE1B3 /* NSString+JQ.m */; };
+		B6296BA91828AADD00ABE1B3 /* JQParse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296BA81828AADD00ABE1B3 /* JQParse.m */; };
+		B6E44DDD180664F800D04EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DDC180664F800D04EF3 /* Foundation.framework */; };
+		B6E44DEB180664F800D04EF3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DEA180664F800D04EF3 /* XCTest.framework */; };
+		B6E44DEC180664F800D04EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DDC180664F800D04EF3 /* Foundation.framework */; };
+		B6E44DEE180664F800D04EF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DED180664F800D04EF3 /* UIKit.framework */; };
+		B6E44DF1180664F800D04EF3 /* libJQKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DD9180664F800D04EF3 /* libJQKit.a */; };
+		B6E44DF7180664F800D04EF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E44DF5180664F800D04EF3 /* InfoPlist.strings */; };
+		B6E44DF9180664F800D04EF3 /* libjqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E44DF8180664F800D04EF3 /* libjqTests.m */; };
+		B6E44E3E180672DF00D04EF3 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = B6E44E3D180672D800D04EF3 /* test.json */; };
+		B6E44E4018067D4E00D04EF3 /* output.json in Resources */ = {isa = PBXBuildFile; fileRef = B6E44E3F180675DB00D04EF3 /* output.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6E44DEF180664F800D04EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6E44DD1180664F800D04EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6E44DD8180664F800D04EF3;
+			remoteInfo = libjq;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6E44DD7180664F800D04EF3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B6296B651828A8CD00ABE1B3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B6296B671828A8CD00ABE1B3 /* builtin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = builtin.c; sourceTree = "<group>"; };
+		B6296B681828A8CD00ABE1B3 /* builtin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = builtin.h; sourceTree = "<group>"; };
+		B6296B691828A8CD00ABE1B3 /* bytecode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bytecode.c; sourceTree = "<group>"; };
+		B6296B6A1828A8CD00ABE1B3 /* bytecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytecode.h; sourceTree = "<group>"; };
+		B6296B6B1828A8CD00ABE1B3 /* compile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compile.c; sourceTree = "<group>"; };
+		B6296B6C1828A8CD00ABE1B3 /* compile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compile.h; sourceTree = "<group>"; };
+		B6296B6D1828A8CD00ABE1B3 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B6296B6E1828A8CD00ABE1B3 /* execute.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = execute.c; sourceTree = "<group>"; };
+		B6296B6F1828A8CD00ABE1B3 /* execute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = execute.h; sourceTree = "<group>"; };
+		B6296B701828A8CD00ABE1B3 /* forkable_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forkable_stack.h; sourceTree = "<group>"; };
+		B6296B711828A8CD00ABE1B3 /* frame_layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame_layout.h; sourceTree = "<group>"; };
+		B6296B721828A8CD00ABE1B3 /* jq_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jq_parser.h; sourceTree = "<group>"; };
+		B6296B731828A8CD00ABE1B3 /* jq_test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jq_test.c; sourceTree = "<group>"; };
+		B6296B741828A8CD00ABE1B3 /* jv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jv.c; sourceTree = "<group>"; };
+		B6296B751828A8CD00ABE1B3 /* jv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jv.h; sourceTree = "<group>"; };
+		B6296B761828A8CD00ABE1B3 /* jv_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jv_alloc.c; sourceTree = "<group>"; };
+		B6296B771828A8CD00ABE1B3 /* jv_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jv_alloc.h; sourceTree = "<group>"; };
+		B6296B781828A8CD00ABE1B3 /* jv_aux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jv_aux.c; sourceTree = "<group>"; };
+		B6296B791828A8CD00ABE1B3 /* jv_aux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jv_aux.h; sourceTree = "<group>"; };
+		B6296B7A1828A8CD00ABE1B3 /* jv_dtoa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jv_dtoa.c; sourceTree = "<group>"; };
+		B6296B7B1828A8CD00ABE1B3 /* jv_dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jv_dtoa.h; sourceTree = "<group>"; };
+		B6296B7C1828A8CD00ABE1B3 /* jv_parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jv_parse.c; sourceTree = "<group>"; };
+		B6296B7D1828A8CD00ABE1B3 /* jv_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jv_parse.h; sourceTree = "<group>"; };
+		B6296B7E1828A8CD00ABE1B3 /* jv_print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jv_print.c; sourceTree = "<group>"; };
+		B6296B7F1828A8CD00ABE1B3 /* jv_unicode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jv_unicode.c; sourceTree = "<group>"; };
+		B6296B801828A8CD00ABE1B3 /* jv_unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jv_unicode.h; sourceTree = "<group>"; };
+		B6296B811828A8CD00ABE1B3 /* jv_utf8_tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jv_utf8_tables.h; sourceTree = "<group>"; };
+		B6296B821828A8CD00ABE1B3 /* lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lexer.c; sourceTree = "<group>"; };
+		B6296B831828A8CD00ABE1B3 /* lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
+		B6296B841828A8CD00ABE1B3 /* locfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locfile.h; sourceTree = "<group>"; };
+		B6296B851828A8CD00ABE1B3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B6296B861828A8CD00ABE1B3 /* opcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opcode.c; sourceTree = "<group>"; };
+		B6296B871828A8CD00ABE1B3 /* opcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode.h; sourceTree = "<group>"; };
+		B6296B881828A8CD00ABE1B3 /* opcode_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opcode_list.h; sourceTree = "<group>"; };
+		B6296B891828A8CD00ABE1B3 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		B6296B8A1828A8CD00ABE1B3 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		B6296B8C1828A8CD00ABE1B3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B6296B8E1828A8CD00ABE1B3 /* NSData+JQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JQ.h"; sourceTree = "<group>"; };
+		B6296B8F1828A8CD00ABE1B3 /* NSData+JQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JQ.m"; sourceTree = "<group>"; };
+		B6296B901828A8CD00ABE1B3 /* NSString+JQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JQ.h"; sourceTree = "<group>"; };
+		B6296B911828A8CD00ABE1B3 /* NSString+JQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JQ.m"; sourceTree = "<group>"; };
+		B6296BA61828A94300ABE1B3 /* JQKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQKit.h; sourceTree = "<group>"; };
+		B6296BA71828A96200ABE1B3 /* JQKit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQKit.pch; sourceTree = "<group>"; };
+		B6296BA81828AADD00ABE1B3 /* JQParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQParse.m; sourceTree = "<group>"; };
+		B6296BAA1828ABC900ABE1B3 /* JQParse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQParse.h; sourceTree = "<group>"; };
+		B6296BAB1828B12800ABE1B3 /* JQKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JQKit.podspec; path = ../JQKit.podspec; sourceTree = "<group>"; };
+		B6E44DD9180664F800D04EF3 /* libJQKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJQKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E44DDC180664F800D04EF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6E44DE9180664F800D04EF3 /* JQKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E44DEA180664F800D04EF3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B6E44DED180664F800D04EF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B6E44DF4180664F800D04EF3 /* libjqTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libjqTests-Info.plist"; sourceTree = "<group>"; };
+		B6E44DF6180664F800D04EF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6E44DF8180664F800D04EF3 /* libjqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libjqTests.m; sourceTree = "<group>"; };
+		B6E44E3D180672D800D04EF3 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		B6E44E3F180675DB00D04EF3 /* output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6E44DD6180664F800D04EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E44DDD180664F800D04EF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E44DE6180664F800D04EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E44DEB180664F800D04EF3 /* XCTest.framework in Frameworks */,
+				B6E44DEE180664F800D04EF3 /* UIKit.framework in Frameworks */,
+				B6E44DF1180664F800D04EF3 /* libJQKit.a in Frameworks */,
+				B6E44DEC180664F800D04EF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6296B631828A8CD00ABE1B3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6296B641828A8CD00ABE1B3 /* ios */,
+				B6296B661828A8CD00ABE1B3 /* libjq */,
+				B6296B8B1828A8CD00ABE1B3 /* osx */,
+				B6296B8D1828A8CD00ABE1B3 /* shared */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		B6296B641828A8CD00ABE1B3 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B6296B651828A8CD00ABE1B3 /* .gitkeep */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		B6296B661828A8CD00ABE1B3 /* libjq */ = {
+			isa = PBXGroup;
+			children = (
+				B6296B671828A8CD00ABE1B3 /* builtin.c */,
+				B6296B681828A8CD00ABE1B3 /* builtin.h */,
+				B6296B691828A8CD00ABE1B3 /* bytecode.c */,
+				B6296B6A1828A8CD00ABE1B3 /* bytecode.h */,
+				B6296B6B1828A8CD00ABE1B3 /* compile.c */,
+				B6296B6C1828A8CD00ABE1B3 /* compile.h */,
+				B6296B6D1828A8CD00ABE1B3 /* config.h */,
+				B6296B6E1828A8CD00ABE1B3 /* execute.c */,
+				B6296B6F1828A8CD00ABE1B3 /* execute.h */,
+				B6296B701828A8CD00ABE1B3 /* forkable_stack.h */,
+				B6296B711828A8CD00ABE1B3 /* frame_layout.h */,
+				B6296B721828A8CD00ABE1B3 /* jq_parser.h */,
+				B6296B731828A8CD00ABE1B3 /* jq_test.c */,
+				B6296B741828A8CD00ABE1B3 /* jv.c */,
+				B6296B751828A8CD00ABE1B3 /* jv.h */,
+				B6296B761828A8CD00ABE1B3 /* jv_alloc.c */,
+				B6296B771828A8CD00ABE1B3 /* jv_alloc.h */,
+				B6296B781828A8CD00ABE1B3 /* jv_aux.c */,
+				B6296B791828A8CD00ABE1B3 /* jv_aux.h */,
+				B6296B7A1828A8CD00ABE1B3 /* jv_dtoa.c */,
+				B6296B7B1828A8CD00ABE1B3 /* jv_dtoa.h */,
+				B6296B7C1828A8CD00ABE1B3 /* jv_parse.c */,
+				B6296B7D1828A8CD00ABE1B3 /* jv_parse.h */,
+				B6296B7E1828A8CD00ABE1B3 /* jv_print.c */,
+				B6296B7F1828A8CD00ABE1B3 /* jv_unicode.c */,
+				B6296B801828A8CD00ABE1B3 /* jv_unicode.h */,
+				B6296B811828A8CD00ABE1B3 /* jv_utf8_tables.h */,
+				B6296B821828A8CD00ABE1B3 /* lexer.c */,
+				B6296B831828A8CD00ABE1B3 /* lexer.h */,
+				B6296B841828A8CD00ABE1B3 /* locfile.h */,
+				B6296B851828A8CD00ABE1B3 /* main.c */,
+				B6296B861828A8CD00ABE1B3 /* opcode.c */,
+				B6296B871828A8CD00ABE1B3 /* opcode.h */,
+				B6296B881828A8CD00ABE1B3 /* opcode_list.h */,
+				B6296B891828A8CD00ABE1B3 /* parser.c */,
+				B6296B8A1828A8CD00ABE1B3 /* parser.h */,
+			);
+			path = libjq;
+			sourceTree = "<group>";
+		};
+		B6296B8B1828A8CD00ABE1B3 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				B6296B8C1828A8CD00ABE1B3 /* .gitkeep */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		B6296B8D1828A8CD00ABE1B3 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				B6296B8E1828A8CD00ABE1B3 /* NSData+JQ.h */,
+				B6296B8F1828A8CD00ABE1B3 /* NSData+JQ.m */,
+				B6296B901828A8CD00ABE1B3 /* NSString+JQ.h */,
+				B6296B911828A8CD00ABE1B3 /* NSString+JQ.m */,
+				B6296BA61828A94300ABE1B3 /* JQKit.h */,
+				B6296BA71828A96200ABE1B3 /* JQKit.pch */,
+				B6296BA81828AADD00ABE1B3 /* JQParse.m */,
+				B6296BAA1828ABC900ABE1B3 /* JQParse.h */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		B6E44DD0180664F700D04EF3 = {
+			isa = PBXGroup;
+			children = (
+				B6296BAB1828B12800ABE1B3 /* JQKit.podspec */,
+				B6296B631828A8CD00ABE1B3 /* Classes */,
+				B6E44DF2180664F800D04EF3 /* libjqTests */,
+				B6E44DDB180664F800D04EF3 /* Frameworks */,
+				B6E44DDA180664F800D04EF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6E44DDA180664F800D04EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6E44DD9180664F800D04EF3 /* libJQKit.a */,
+				B6E44DE9180664F800D04EF3 /* JQKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6E44DDB180664F800D04EF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E44DDC180664F800D04EF3 /* Foundation.framework */,
+				B6E44DEA180664F800D04EF3 /* XCTest.framework */,
+				B6E44DED180664F800D04EF3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6E44DF2180664F800D04EF3 /* libjqTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6E44E3F180675DB00D04EF3 /* output.json */,
+				B6E44E3D180672D800D04EF3 /* test.json */,
+				B6E44DF8180664F800D04EF3 /* libjqTests.m */,
+				B6E44DF3180664F800D04EF3 /* Supporting Files */,
+			);
+			path = libjqTests;
+			sourceTree = "<group>";
+		};
+		B6E44DF3180664F800D04EF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6E44DF4180664F800D04EF3 /* libjqTests-Info.plist */,
+				B6E44DF5180664F800D04EF3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6E44DD8180664F800D04EF3 /* JQKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E44DFC180664F800D04EF3 /* Build configuration list for PBXNativeTarget "JQKit" */;
+			buildPhases = (
+				B6E44DD5180664F800D04EF3 /* Sources */,
+				B6E44DD6180664F800D04EF3 /* Frameworks */,
+				B6E44DD7180664F800D04EF3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JQKit;
+			productName = libjq;
+			productReference = B6E44DD9180664F800D04EF3 /* libJQKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B6E44DE8180664F800D04EF3 /* JQKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E44DFF180664F800D04EF3 /* Build configuration list for PBXNativeTarget "JQKitTests" */;
+			buildPhases = (
+				B6E44DE5180664F800D04EF3 /* Sources */,
+				B6E44DE6180664F800D04EF3 /* Frameworks */,
+				B6E44DE7180664F800D04EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E44DF0180664F800D04EF3 /* PBXTargetDependency */,
+			);
+			name = JQKitTests;
+			productName = libjqTests;
+			productReference = B6E44DE9180664F800D04EF3 /* JQKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6E44DD1180664F800D04EF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Fred Leitz";
+			};
+			buildConfigurationList = B6E44DD4180664F800D04EF3 /* Build configuration list for PBXProject "JQKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6E44DD0180664F700D04EF3;
+			productRefGroup = B6E44DDA180664F800D04EF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6E44DD8180664F800D04EF3 /* JQKit */,
+				B6E44DE8180664F800D04EF3 /* JQKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6E44DE7180664F800D04EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E44DF7180664F800D04EF3 /* InfoPlist.strings in Resources */,
+				B6E44E3E180672DF00D04EF3 /* test.json in Resources */,
+				B6E44E4018067D4E00D04EF3 /* output.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6E44DD5180664F800D04EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6296B981828A8CD00ABE1B3 /* jv_alloc.c in Sources */,
+				B6296B941828A8CD00ABE1B3 /* compile.c in Sources */,
+				B6296B971828A8CD00ABE1B3 /* jv.c in Sources */,
+				B6296B9D1828A8CD00ABE1B3 /* jv_unicode.c in Sources */,
+				B6296B9C1828A8CD00ABE1B3 /* jv_print.c in Sources */,
+				B6296B951828A8CD00ABE1B3 /* execute.c in Sources */,
+				B6296BA21828A8CD00ABE1B3 /* NSData+JQ.m in Sources */,
+				B6296BA11828A8CD00ABE1B3 /* parser.c in Sources */,
+				B6296B9F1828A8CD00ABE1B3 /* main.c in Sources */,
+				B6296B931828A8CD00ABE1B3 /* bytecode.c in Sources */,
+				B6296B9E1828A8CD00ABE1B3 /* lexer.c in Sources */,
+				B6296B921828A8CD00ABE1B3 /* builtin.c in Sources */,
+				B6296B9A1828A8CD00ABE1B3 /* jv_dtoa.c in Sources */,
+				B6296BA91828AADD00ABE1B3 /* JQParse.m in Sources */,
+				B6296B991828A8CD00ABE1B3 /* jv_aux.c in Sources */,
+				B6296B961828A8CD00ABE1B3 /* jq_test.c in Sources */,
+				B6296BA01828A8CD00ABE1B3 /* opcode.c in Sources */,
+				B6296BA31828A8CD00ABE1B3 /* NSString+JQ.m in Sources */,
+				B6296B9B1828A8CD00ABE1B3 /* jv_parse.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E44DE5180664F800D04EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E44DF9180664F800D04EF3 /* libjqTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6E44DF0180664F800D04EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6E44DD8180664F800D04EF3 /* JQKit */;
+			targetProxy = B6E44DEF180664F800D04EF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6E44DF5180664F800D04EF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E44DF6180664F800D04EF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6E44DFA180664F800D04EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6E44DFB180664F800D04EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6E44DFD180664F800D04EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libjq.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Classes/shared/JQKit.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JQKit;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B6E44DFE180664F800D04EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libjq.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Classes/shared/JQKit.pch;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JQKit;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B6E44E00180664F800D04EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libjq/libjq-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "libjqTests/libjqTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = JQKitTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B6E44E01180664F800D04EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libjq/libjq-Prefix.pch";
+				INFOPLIST_FILE = "libjqTests/libjqTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = JQKitTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6E44DD4180664F800D04EF3 /* Build configuration list for PBXProject "JQKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E44DFA180664F800D04EF3 /* Debug */,
+				B6E44DFB180664F800D04EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E44DFC180664F800D04EF3 /* Build configuration list for PBXNativeTarget "JQKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E44DFD180664F800D04EF3 /* Debug */,
+				B6E44DFE180664F800D04EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E44DFF180664F800D04EF3 /* Build configuration list for PBXNativeTarget "JQKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E44E00180664F800D04EF3 /* Debug */,
+				B6E44E01180664F800D04EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6E44DD1180664F800D04EF3 /* Project object */;
+}

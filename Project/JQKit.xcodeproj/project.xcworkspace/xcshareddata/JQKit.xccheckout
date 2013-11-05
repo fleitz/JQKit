@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>644228C6-0AE1-41BA-9CF0-068ABFECA975</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JQKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F979EE18-705D-44F0-A720-F6DC38C95A16</key>
+		<string>ssh://github.com/fleitz/JQKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Project/JQKit.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F979EE18-705D-44F0-A720-F6DC38C95A16</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/fleitz/JQKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F979EE18-705D-44F0-A720-F6DC38C95A16</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F979EE18-705D-44F0-A720-F6DC38C95A16</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JQKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

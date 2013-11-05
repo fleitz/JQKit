@@ -7,10 +7,16 @@
 //
 
 #import "NSString+JQ.h"
-
+#import "JQParse.h"
 @implementation NSString (JQ)
 - (NSString *)jq:(NSString *)jq withOptions:(JV_OPTIONS)flags{
-   return [[NSString alloc] initWithData:[[self dataUsingEncoding:NSUTF8StringEncoding] jq:jq withOptions:flags] encoding:NSUTF8StringEncoding];
+    const char* data = [self UTF8String];
+    const int data_length = strlen(data);
+    __block NSString* outputStr;
+    JQParse([jq UTF8String], data, data_length, flags, ^(const char *output, const NSUInteger length) {
+        outputStr = [[NSString alloc] initWithUTF8String:output];
+   });
+    return outputStr;
 }
 
 - (NSString *)jq:(NSString *)jq{
