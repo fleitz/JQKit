@@ -17,7 +17,7 @@
 #include "config.h"  /* Autoconf generated header file */
 #include "jv_alloc.h"
 
-void JQParse(const char* jq_program,const char* data,NSUInteger data_length,JV_OPTIONS flags,void (^callback)(const char * output,const NSUInteger length)){
+void JQParse(const char* jq_program, const char* data, NSUInteger data_length, JV_OPTIONS flags, void (^callback)(const char * output,const NSUInteger length)){
     struct bytecode* bc = jq_compile(jq_program);
     struct jv_parser parser;
     jv_parser_init(&parser);

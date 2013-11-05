@@ -28,13 +28,9 @@ typedef NS_OPTIONS(NSInteger, JV_OPTIONS){
     /* debugging only */
     DUMP_DISASM = 2048,
 };
- void JQParse(
-                    const char* jq_program,
-                    const char* data,
-                    NSUInteger data_length,
-                    JV_OPTIONS flags,
-                    void (^callback)(const char * output,
-                                   const NSUInteger length));
+
+FOUNDATION_EXPORT void JQParse(const char* jq_program, const char* data, NSUInteger data_length, JV_OPTIONS flags, void (^callback)(const char * output,const NSUInteger length));
+
 
 
 #endif

@@ -7,7 +7,7 @@
 //
 
 #import "NSData+JQ.h"
-
+#import "JQParse.h"
 
 
 @implementation NSData (JQ)

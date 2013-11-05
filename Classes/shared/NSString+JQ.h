@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSData+JQ.h"
+#import "JQParse.h"
 @interface NSString (JQ)
 - (NSString*) jq:(NSString*)jq withOptions:(JV_OPTIONS)flags;
 - (NSString*) jq:(NSString*)jq;

@@ -9,10 +9,9 @@
 #ifndef JQKit_JQKit_h
 #define JQKit_JQKit_h
 
-#include "JQParse.h"
 
 #ifdef __OBJC__
-
+#import "JQParse.h"
 #import "NSData+JQ.h"
 #import "NSString+JQ.h"
 
