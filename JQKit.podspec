@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JQKit"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "JQKit is an Objective-C wrapper around jq."
   s.description  = <<-DESC
                     JQKit is an Objective-C wrapper around jq.
