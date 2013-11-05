@@ -11,4 +11,7 @@
 #import <JQKit/JQKit.h>
 @interface JQRepoViewController : UICollectionViewController
 
+
+@property (nonatomic,strong) NSArray* data;
+
 @end

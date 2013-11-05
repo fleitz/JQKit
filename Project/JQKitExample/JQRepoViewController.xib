@@ -21,6 +21,10 @@
                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             </collectionViewFlowLayout>
             <cells/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="DVJ-N0-Dnz"/>
+                <outlet property="delegate" destination="-1" id="2ae-sU-YOz"/>
+            </connections>
         </collectionView>
     </objects>
 </document>
