@@ -9,9 +9,9 @@
 #ifndef JQKit_JQKit_h
 #define JQKit_JQKit_h
 
-void JQParse(const char* jq_program, void (^result)(const char * output, int length));
+#include "JQParse.h"
 
-#ifdef __objc__
+#ifdef __OBJC__
 
 #import "NSData+JQ.h"
 #import "NSString+JQ.h"

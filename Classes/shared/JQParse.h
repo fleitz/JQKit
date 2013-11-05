@@ -8,6 +8,7 @@
 
 #ifndef JQKit_JQParse_h
 #define JQKit_JQParse_h
+
 #import <Foundation/Foundation.h>
 #include "jv.h"
 
@@ -27,8 +28,7 @@ typedef NS_OPTIONS(NSInteger, JV_OPTIONS){
     /* debugging only */
     DUMP_DISASM = 2048,
 };
-
-FOUNDATION_EXPORT void JQParse(
+ void JQParse(
                     const char* jq_program,
                     const char* data,
                     NSUInteger data_length,

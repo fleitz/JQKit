@@ -1,7 +1,5 @@
 pod "JQKit", :path => "../"
 
-target "Demo" do
-end
-
-target "DemoTests" do
+target "JQKitExample" do
+pod 'AFNetworking'
 end

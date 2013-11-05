@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07861ECC9227450BBF445567 /* libPods-JQKitExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7A02059B1845B8A13800DB /* libPods-JQKitExample.a */; };
+		349A7F41AD164A8A88090FA3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EDECBFB0744A69A389B068 /* libPods.a */; };
 		B6296B921828A8CD00ABE1B3 /* builtin.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B671828A8CD00ABE1B3 /* builtin.c */; };
 		B6296B931828A8CD00ABE1B3 /* bytecode.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B691828A8CD00ABE1B3 /* bytecode.c */; };
 		B6296B941828A8CD00ABE1B3 /* compile.c in Sources */ = {isa = PBXBuildFile; fileRef = B6296B6B1828A8CD00ABE1B3 /* compile.c */; };
@@ -26,6 +28,23 @@
 		B6296BA21828A8CD00ABE1B3 /* NSData+JQ.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296B8F1828A8CD00ABE1B3 /* NSData+JQ.m */; };
 		B6296BA31828A8CD00ABE1B3 /* NSString+JQ.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296B911828A8CD00ABE1B3 /* NSString+JQ.m */; };
 		B6296BA91828AADD00ABE1B3 /* JQParse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296BA81828AADD00ABE1B3 /* JQParse.m */; };
+		B6296BB11828B8C400ABE1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DDC180664F800D04EF3 /* Foundation.framework */; };
+		B6296BB31828B8C400ABE1B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6296BB21828B8C400ABE1B3 /* CoreGraphics.framework */; };
+		B6296BB41828B8C400ABE1B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DED180664F800D04EF3 /* UIKit.framework */; };
+		B6296BBA1828B8C400ABE1B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6296BB81828B8C400ABE1B3 /* InfoPlist.strings */; };
+		B6296BBC1828B8C400ABE1B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296BBB1828B8C400ABE1B3 /* main.m */; };
+		B6296BC01828B8C400ABE1B3 /* JQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296BBF1828B8C400ABE1B3 /* JQAppDelegate.m */; };
+		B6296BC21828B8C400ABE1B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6296BC11828B8C400ABE1B3 /* Images.xcassets */; };
+		B6296BC81828B8C400ABE1B3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DEA180664F800D04EF3 /* XCTest.framework */; };
+		B6296BC91828B8C400ABE1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DDC180664F800D04EF3 /* Foundation.framework */; };
+		B6296BCA1828B8C400ABE1B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DED180664F800D04EF3 /* UIKit.framework */; };
+		B6296BD21828B8C400ABE1B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6296BD01828B8C400ABE1B3 /* InfoPlist.strings */; };
+		B6296BD41828B8C400ABE1B3 /* JQKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296BD31828B8C400ABE1B3 /* JQKitExampleTests.m */; };
+		B6296BDF1828BCFB00ABE1B3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B6296BDE1828BCFB00ABE1B3 /* Podfile */; };
+		B6296BE31828BEDB00ABE1B3 /* JQRepoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296BE11828BEDB00ABE1B3 /* JQRepoViewController.m */; };
+		B6296BE41828BEDB00ABE1B3 /* JQRepoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6296BE21828BEDB00ABE1B3 /* JQRepoViewController.xib */; };
+		B6296BE71828BF0400ABE1B3 /* JQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6296BE61828BF0400ABE1B3 /* JQCollectionViewCell.m */; };
+		B6296BE91828BF1A00ABE1B3 /* JQCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6296BE81828BF1A00ABE1B3 /* JQCollectionViewCell.xib */; };
 		B6E44DDD180664F800D04EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DDC180664F800D04EF3 /* Foundation.framework */; };
 		B6E44DEB180664F800D04EF3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DEA180664F800D04EF3 /* XCTest.framework */; };
 		B6E44DEC180664F800D04EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E44DDC180664F800D04EF3 /* Foundation.framework */; };
@@ -38,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B6296BCB1828B8C400ABE1B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6E44DD1180664F800D04EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6296BAF1828B8C400ABE1B3;
+			remoteInfo = JQKitExample;
+		};
 		B6E44DEF180664F800D04EF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6E44DD1180664F800D04EF3 /* Project object */;
@@ -60,6 +86,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C7A02059B1845B8A13800DB /* libPods-JQKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JQKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F9D32DC72A4D26A85DC090 /* Pods-JQKitExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQKitExample.xcconfig"; path = "Pods/Pods-JQKitExample.xcconfig"; sourceTree = "<group>"; };
+		B2EDECBFB0744A69A389B068 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6296B651828A8CD00ABE1B3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		B6296B671828A8CD00ABE1B3 /* builtin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = builtin.c; sourceTree = "<group>"; };
 		B6296B681828A8CD00ABE1B3 /* builtin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = builtin.h; sourceTree = "<group>"; };
@@ -107,6 +136,26 @@
 		B6296BA81828AADD00ABE1B3 /* JQParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQParse.m; sourceTree = "<group>"; };
 		B6296BAA1828ABC900ABE1B3 /* JQParse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQParse.h; sourceTree = "<group>"; };
 		B6296BAB1828B12800ABE1B3 /* JQKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JQKit.podspec; path = ../JQKit.podspec; sourceTree = "<group>"; };
+		B6296BB01828B8C400ABE1B3 /* JQKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6296BB21828B8C400ABE1B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6296BB71828B8C400ABE1B3 /* JQKitExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JQKitExample-Info.plist"; sourceTree = "<group>"; };
+		B6296BB91828B8C400ABE1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6296BBB1828B8C400ABE1B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6296BBD1828B8C400ABE1B3 /* JQKitExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JQKitExample-Prefix.pch"; sourceTree = "<group>"; };
+		B6296BBE1828B8C400ABE1B3 /* JQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQAppDelegate.h; sourceTree = "<group>"; };
+		B6296BBF1828B8C400ABE1B3 /* JQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQAppDelegate.m; sourceTree = "<group>"; };
+		B6296BC11828B8C400ABE1B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6296BC71828B8C400ABE1B3 /* JQKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6296BCF1828B8C400ABE1B3 /* JQKitExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JQKitExampleTests-Info.plist"; sourceTree = "<group>"; };
+		B6296BD11828B8C400ABE1B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6296BD31828B8C400ABE1B3 /* JQKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQKitExampleTests.m; sourceTree = "<group>"; };
+		B6296BDE1828BCFB00ABE1B3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		B6296BE01828BEDB00ABE1B3 /* JQRepoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQRepoViewController.h; sourceTree = "<group>"; };
+		B6296BE11828BEDB00ABE1B3 /* JQRepoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQRepoViewController.m; sourceTree = "<group>"; };
+		B6296BE21828BEDB00ABE1B3 /* JQRepoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JQRepoViewController.xib; sourceTree = "<group>"; };
+		B6296BE51828BF0400ABE1B3 /* JQCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQCollectionViewCell.h; sourceTree = "<group>"; };
+		B6296BE61828BF0400ABE1B3 /* JQCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQCollectionViewCell.m; sourceTree = "<group>"; };
+		B6296BE81828BF1A00ABE1B3 /* JQCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JQCollectionViewCell.xib; sourceTree = "<group>"; };
 		B6E44DD9180664F800D04EF3 /* libJQKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJQKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E44DDC180664F800D04EF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6E44DE9180664F800D04EF3 /* JQKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,14 +166,37 @@
 		B6E44DF8180664F800D04EF3 /* libjqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libjqTests.m; sourceTree = "<group>"; };
 		B6E44E3D180672D800D04EF3 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		B6E44E3F180675DB00D04EF3 /* output.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
+		FB57828C02F643DE9CD150FC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6296BAD1828B8C400ABE1B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6296BB31828B8C400ABE1B3 /* CoreGraphics.framework in Frameworks */,
+				B6296BB41828B8C400ABE1B3 /* UIKit.framework in Frameworks */,
+				B6296BB11828B8C400ABE1B3 /* Foundation.framework in Frameworks */,
+				07861ECC9227450BBF445567 /* libPods-JQKitExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6296BC41828B8C400ABE1B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6296BC81828B8C400ABE1B3 /* XCTest.framework in Frameworks */,
+				B6296BCA1828B8C400ABE1B3 /* UIKit.framework in Frameworks */,
+				B6296BC91828B8C400ABE1B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6E44DD6180664F800D04EF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B6E44DDD180664F800D04EF3 /* Foundation.framework in Frameworks */,
+				349A7F41AD164A8A88090FA3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,14 +300,65 @@
 			path = shared;
 			sourceTree = "<group>";
 		};
+		B6296BB51828B8C400ABE1B3 /* JQKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				B6296BDE1828BCFB00ABE1B3 /* Podfile */,
+				B6296BBE1828B8C400ABE1B3 /* JQAppDelegate.h */,
+				B6296BBF1828B8C400ABE1B3 /* JQAppDelegate.m */,
+				B6296BC11828B8C400ABE1B3 /* Images.xcassets */,
+				B6296BB61828B8C400ABE1B3 /* Supporting Files */,
+				B6296BE01828BEDB00ABE1B3 /* JQRepoViewController.h */,
+				B6296BE11828BEDB00ABE1B3 /* JQRepoViewController.m */,
+				B6296BE21828BEDB00ABE1B3 /* JQRepoViewController.xib */,
+				B6296BE51828BF0400ABE1B3 /* JQCollectionViewCell.h */,
+				B6296BE61828BF0400ABE1B3 /* JQCollectionViewCell.m */,
+				B6296BE81828BF1A00ABE1B3 /* JQCollectionViewCell.xib */,
+			);
+			path = JQKitExample;
+			sourceTree = "<group>";
+		};
+		B6296BB61828B8C400ABE1B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6296BB71828B8C400ABE1B3 /* JQKitExample-Info.plist */,
+				B6296BB81828B8C400ABE1B3 /* InfoPlist.strings */,
+				B6296BBB1828B8C400ABE1B3 /* main.m */,
+				B6296BBD1828B8C400ABE1B3 /* JQKitExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6296BCD1828B8C400ABE1B3 /* JQKitExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6296BD31828B8C400ABE1B3 /* JQKitExampleTests.m */,
+				B6296BCE1828B8C400ABE1B3 /* Supporting Files */,
+			);
+			path = JQKitExampleTests;
+			sourceTree = "<group>";
+		};
+		B6296BCE1828B8C400ABE1B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6296BCF1828B8C400ABE1B3 /* JQKitExampleTests-Info.plist */,
+				B6296BD01828B8C400ABE1B3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B6E44DD0180664F700D04EF3 = {
 			isa = PBXGroup;
 			children = (
 				B6296BAB1828B12800ABE1B3 /* JQKit.podspec */,
 				B6296B631828A8CD00ABE1B3 /* Classes */,
 				B6E44DF2180664F800D04EF3 /* libjqTests */,
+				B6296BB51828B8C400ABE1B3 /* JQKitExample */,
+				B6296BCD1828B8C400ABE1B3 /* JQKitExampleTests */,
 				B6E44DDB180664F800D04EF3 /* Frameworks */,
 				B6E44DDA180664F800D04EF3 /* Products */,
+				FB57828C02F643DE9CD150FC /* Pods.xcconfig */,
+				55F9D32DC72A4D26A85DC090 /* Pods-JQKitExample.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +367,8 @@
 			children = (
 				B6E44DD9180664F800D04EF3 /* libJQKit.a */,
 				B6E44DE9180664F800D04EF3 /* JQKitTests.xctest */,
+				B6296BB01828B8C400ABE1B3 /* JQKitExample.app */,
+				B6296BC71828B8C400ABE1B3 /* JQKitExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,6 +379,9 @@
 				B6E44DDC180664F800D04EF3 /* Foundation.framework */,
 				B6E44DEA180664F800D04EF3 /* XCTest.framework */,
 				B6E44DED180664F800D04EF3 /* UIKit.framework */,
+				B6296BB21828B8C400ABE1B3 /* CoreGraphics.framework */,
+				B2EDECBFB0744A69A389B068 /* libPods.a */,
+				4C7A02059B1845B8A13800DB /* libPods-JQKitExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,13 +409,52 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6296BAF1828B8C400ABE1B3 /* JQKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6296BD51828B8C400ABE1B3 /* Build configuration list for PBXNativeTarget "JQKitExample" */;
+			buildPhases = (
+				3B331BDA96664433B89BC87D /* Check Pods Manifest.lock */,
+				B6296BAC1828B8C400ABE1B3 /* Sources */,
+				B6296BAD1828B8C400ABE1B3 /* Frameworks */,
+				B6296BAE1828B8C400ABE1B3 /* Resources */,
+				0B079035918C47D1A07963E9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JQKitExample;
+			productName = JQKitExample;
+			productReference = B6296BB01828B8C400ABE1B3 /* JQKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6296BC61828B8C400ABE1B3 /* JQKitExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6296BD81828B8C400ABE1B3 /* Build configuration list for PBXNativeTarget "JQKitExampleTests" */;
+			buildPhases = (
+				B6296BC31828B8C400ABE1B3 /* Sources */,
+				B6296BC41828B8C400ABE1B3 /* Frameworks */,
+				B6296BC51828B8C400ABE1B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6296BCC1828B8C400ABE1B3 /* PBXTargetDependency */,
+			);
+			name = JQKitExampleTests;
+			productName = JQKitExampleTests;
+			productReference = B6296BC71828B8C400ABE1B3 /* JQKitExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B6E44DD8180664F800D04EF3 /* JQKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6E44DFC180664F800D04EF3 /* Build configuration list for PBXNativeTarget "JQKit" */;
 			buildPhases = (
+				A93043A010E043BF9D15978B /* Check Pods Manifest.lock */,
 				B6E44DD5180664F800D04EF3 /* Sources */,
 				B6E44DD6180664F800D04EF3 /* Frameworks */,
 				B6E44DD7180664F800D04EF3 /* CopyFiles */,
+				35BE1186C56A4813B915F4E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +491,14 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Fred Leitz";
+				TargetAttributes = {
+					B6296BC61828B8C400ABE1B3 = {
+						TestTargetID = B6296BAF1828B8C400ABE1B3;
+					};
+					B6E44DE8180664F800D04EF3 = {
+						TestTargetID = B6296BAF1828B8C400ABE1B3;
+					};
+				};
 			};
 			buildConfigurationList = B6E44DD4180664F800D04EF3 /* Build configuration list for PBXProject "JQKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -339,11 +514,33 @@
 			targets = (
 				B6E44DD8180664F800D04EF3 /* JQKit */,
 				B6E44DE8180664F800D04EF3 /* JQKitTests */,
+				B6296BAF1828B8C400ABE1B3 /* JQKitExample */,
+				B6296BC61828B8C400ABE1B3 /* JQKitExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B6296BAE1828B8C400ABE1B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6296BDF1828BCFB00ABE1B3 /* Podfile in Resources */,
+				B6296BE91828BF1A00ABE1B3 /* JQCollectionViewCell.xib in Resources */,
+				B6296BE41828BEDB00ABE1B3 /* JQRepoViewController.xib in Resources */,
+				B6296BBA1828B8C400ABE1B3 /* InfoPlist.strings in Resources */,
+				B6296BC21828B8C400ABE1B3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6296BC51828B8C400ABE1B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6296BD21828B8C400ABE1B3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6E44DE7180664F800D04EF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,7 +553,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B079035918C47D1A07963E9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-JQKitExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35BE1186C56A4813B915F4E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B331BDA96664433B89BC87D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A93043A010E043BF9D15978B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B6296BAC1828B8C400ABE1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6296BE31828BEDB00ABE1B3 /* JQRepoViewController.m in Sources */,
+				B6296BBC1828B8C400ABE1B3 /* main.m in Sources */,
+				B6296BC01828B8C400ABE1B3 /* JQAppDelegate.m in Sources */,
+				B6296BE71828BF0400ABE1B3 /* JQCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6296BC31828B8C400ABE1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6296BD41828B8C400ABE1B3 /* JQKitExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6E44DD5180664F800D04EF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +673,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B6296BCC1828B8C400ABE1B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6296BAF1828B8C400ABE1B3 /* JQKitExample */;
+			targetProxy = B6296BCB1828B8C400ABE1B3 /* PBXContainerItemProxy */;
+		};
 		B6E44DF0180664F800D04EF3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B6E44DD8180664F800D04EF3 /* JQKit */;
@@ -402,6 +686,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B6296BB81828B8C400ABE1B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6296BB91828B8C400ABE1B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6296BD01828B8C400ABE1B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6296BD11828B8C400ABE1B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		B6E44DF5180664F800D04EF3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,6 +713,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B6296BD61828B8C400ABE1B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F9D32DC72A4D26A85DC090 /* Pods-JQKitExample.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JQKitExample/JQKitExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JQKitExample/JQKitExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6296BD71828B8C400ABE1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F9D32DC72A4D26A85DC090 /* Pods-JQKitExample.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JQKitExample/JQKitExample-Prefix.pch";
+				INFOPLIST_FILE = "JQKitExample/JQKitExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B6296BD91828B8C400ABE1B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JQKitExample.app/JQKitExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JQKitExample/JQKitExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JQKitExampleTests/JQKitExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B6296BDA1828B8C400ABE1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JQKitExample.app/JQKitExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JQKitExample/JQKitExample-Prefix.pch";
+				INFOPLIST_FILE = "JQKitExampleTests/JQKitExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		B6E44DFA180664F800D04EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +873,7 @@
 		};
 		B6E44DFD180664F800D04EF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB57828C02F643DE9CD150FC /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/libjq.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -497,6 +886,7 @@
 		};
 		B6E44DFE180664F800D04EF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB57828C02F643DE9CD150FC /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/libjq.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -511,6 +901,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JQKitExample.app/JQKitExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -530,6 +921,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = JQKitTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -538,6 +930,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JQKitExample.app/JQKitExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -553,6 +946,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = JQKitTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -560,6 +954,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B6296BD51828B8C400ABE1B3 /* Build configuration list for PBXNativeTarget "JQKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6296BD61828B8C400ABE1B3 /* Debug */,
+				B6296BD71828B8C400ABE1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6296BD81828B8C400ABE1B3 /* Build configuration list for PBXNativeTarget "JQKitExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6296BD91828B8C400ABE1B3 /* Debug */,
+				B6296BDA1828B8C400ABE1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6E44DD4180664F800D04EF3 /* Build configuration list for PBXProject "JQKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
