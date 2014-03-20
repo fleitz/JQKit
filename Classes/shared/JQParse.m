@@ -28,7 +28,11 @@ void JQParse(const char* jq_program, const char* data, NSUInteger data_length, J
         jq_init(bc, value, &jq, flags);
         jv result;
         while (jv_is_valid(result = jq_next(jq))) {
-            jv output = jv_dump_string(result, JV_PRINT_PRETTY);
+            int option = JV_PRINT_PRETTY;
+            if (flags & COLOUR_OUTPUT) {
+                option = (option | JV_PRINT_COLOUR);
+            }
+            jv output = jv_dump_string(result, option);
             const char* outputStr = jv_string_value(output);
             int len = jv_string_length_bytes(output);
             callback( outputStr, len);
