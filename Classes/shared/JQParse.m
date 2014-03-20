@@ -30,7 +30,7 @@ void JQParse(const char* jq_program, const char* data, NSUInteger data_length, J
         while (jv_is_valid(result = jq_next(jq))) {
             jv output = jv_dump_string(result, JV_PRINT_PRETTY);
             const char* outputStr = jv_string_value(output);
-            int len = jv_string_length_bytes(output);
+            int len = jv_string_length_bytes(jv_copy(output));
             callback( outputStr, len);
             jv_free(output);
         }
